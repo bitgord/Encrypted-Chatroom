@@ -5,6 +5,9 @@ var socket = io();
 
 console.log(name + ' wants to join ' + room);
 
+// Update h1 tad
+jQuery('.room-title').text(room);
+
 socket.on('connect', function () {
 	console.log('Conncted to socket.io server!');
 });
